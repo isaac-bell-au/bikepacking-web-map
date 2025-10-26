@@ -8,7 +8,7 @@
     rel="stylesheet"
     href="https://unpkg.com/leaflet/dist/leaflet.css"
   />
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/leaflet-gpx"></script>
   <style>
     html, body {
@@ -50,27 +50,26 @@
     }).addTo(map);
 
     async function loadAllGPX() {
-      // Load summaries.json (if it exists)
+      // Load summaries.json
       let summaries = {};
       try {
         const s = await fetch('summaries.json');
         if (s.ok) summaries = await s.json();
       } catch (err) {
         console.warn('No summaries.json found or invalid JSON');
-      }
-
-      // Get list of GPX files from /gpx/ directory
-      const res = await fetch('gpx/');
-      const text = await res.text();
-      const gpxFiles = [...text.matchAll(/href="([^"]+\.gpx)"/g)].map(m => m[1]);
-
-      if (gpxFiles.length === 0) {
-        alert("No GPX files found in /gpx/ folder.");
         return;
       }
-
+    
+      // Extract GPX file names from summaries.json
+      const gpxFiles = Object.keys(summaries);
+    
+      if (gpxFiles.length === 0) {
+        alert("No GPX files found in summaries.json.");
+        return;
+      }
+    
       let allBounds = [];
-
+    
       for (const file of gpxFiles) {
         const layer = new L.GPX(`gpx/${file}`, {
           async: true,
@@ -79,16 +78,16 @@
         })
         .on('loaded', e => {
           const g = e.target;
-
+    
           // Distance and elevation from leaflet-gpx parser
           const distance = (g.get_distance() / 1000).toFixed(1);
           const elev = Math.round(g.get_elevation_gain());
-
+    
           // Lookup name + desc from summaries.json
           const entry = summaries[file] || {};
           const name = entry.name || file.replace('.gpx', '');
           const desc = entry.desc || '';
-
+    
           const popup = `
             <div class="ride-popup">
               <div class="ride-name">${name}</div>
@@ -97,9 +96,9 @@
               ${desc ? `<span class="ride-desc">${desc}</span>` : ''}
             </div>
           `;
-
+    
           g.bindPopup(popup);
-
+    
           // Adjust map bounds to fit all routes
           const bounds = g.getBounds();
           allBounds.push(bounds);
@@ -111,7 +110,7 @@
         .addTo(map);
       }
     }
-
+    
     loadAllGPX();
   </script>
 </body>
