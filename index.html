@@ -74,7 +74,7 @@
         const layer = new L.GPX(`gpx/${file}`, {
           async: true,
           polyline_options: { color: 'red', weight: 3 },
-          marker_options: { startIconUrl: null, endIconUrl: null }
+          marker_options: { startIconUrl: L.Icon.Default.imagePath + '/marker-icon.png', endIconUrl: null }
         })
         .on('loaded', e => {
           const g = e.target;
