@@ -31,8 +31,8 @@
     "name": "Westfjords Day 7: Short pedal into Borgarnes for a bus back to Reykjavík",
     "desc": ""
   },
-  "29_10_2025 Putney -- Surry Hills.gpx": {
-    "name": "29/10/25 Putney -> Surry Hills",
+  "29_10_2025 Putney -- Surrey Hills.gpx": {
+    "name": "29/10/2025 Putney -> Surrey Hills",
     "desc": "Bit of a late start out of London but good to make some ground towards Portsmouth - we got a ferry to catch! Richmond Park was a lovely route out of the city. As usual getting on the bike makes all the fuss worthwhile :)"
   },
   "30_10_2025 Surry Hills -- Portsmouth.gpx": {
@@ -47,7 +47,7 @@
     "name": "02/11/2025 Elaxalde -> Mutriku",
     "desc": "After a bit of slipping and sliding in the mud, bailing on to the very pleasant roads with all the other cyclists was a great idea. As was coffee and pintxos at the first cafe en route in Guernica. A very pleasant day of road riding followed, through ever-more picturesque coastal Basque towns."
   },
-  "04_11_2025 Mutriku -- Donastia, San Sebastián.gpx": {
+  "04_11_2025 Mutriku -- Donastia, San Sebastian.gpx": {
     "name": "04/11/2025 Mutriku -> Donastia / San Sebastián",
     "desc": "A mere 4km before coffee and treats - getting used to this. More coastal roads, more pretty coastal towns, some silly hike-a-bike in the route that we’re going to try to forget. The high ridge of Mt Igeldo after dark was atmospheric before dropping into Donastia / San Sebastián."
   },
@@ -67,8 +67,20 @@
     "name": "10/11/2025 Ubasa Plateau -> Larraona",
     "desc": ""
   },
-  "12_11_2025 Larraona -- Logroño.gpx": {
+  "12_11_2025 Larraona -- Logrono.gpx": {
     "name": "12/11/2025 Larraona -> Logroño",
     "desc": ""
+  },
+  "25_11_14.gpx": {
+    "name": "14/11/2025 Logroño -> Ribafrecha",
+    "desc": "Good to get a few kms done after a day dominated again by some productive admin. It was pleasant to ride through dusk."
+  },
+  "25_11_15.gpx": {
+    "name": "15/11/2025 Ribafrecha -> Refugio Monte Real",
+    "desc": "Pretty nice for a day of basically nonstop climbing! The podcasts help. Up the Leza river Cañon and then onto the Sierra del a Cebollera. Some pleasant gravel and weather up until the last 5km when both turned, but hard to stay feeling sorry for yourself in a hut. Made a good new addition to the camping recipe book: shepherds pie.”
+  },
+  "25_11_16.gpx": {
+    "name": "16/11/2025 Refugio Monte Real -> near Cornago",
+    "desc": "A good feeling to wake up to a view you couldn’t see the night before. A cold morning up high but a nice decent down from the pre-alpine scrub into forest, then further down into scrub again, with a Mediterranean feel. After coffee, tapas, and a look at the dinosaurio footprints in Enciso, didn’t make it far up the road before suddenly it was dark - not sure where the time went (well, to the sleep in and tapas I think).”
   }
 }
