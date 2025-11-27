@@ -130,7 +130,7 @@
     "strava": "https://www.strava.com/activities/15311681290"
   },
   "25_10_29.gpx": {
-    "name": "29/10/25 Putney -> Surry Hills",
+    "name": "29/10/2025 Putney -> Surry Hills",
     "desc": "Bit of a late start out of London but good to make some ground towards Portsmouth - we got a ferry to catch! Richmond Park was a lovely route out of the city. As usual getting on the bike makes all the fuss worthwhile :)",
     "strava": "https://www.strava.com/activities/16300067828"
   },
@@ -195,23 +195,33 @@
     "strava": "https://www.strava.com/activities/16479030937"
   },
    "25_11_17.gpx": {
-    "name": "17/11/2025 near Cornago -> Monte Alcarama",
+    "name": "17/11/2025 Cornago -> Monte Alcarama",
     "desc": "A new routine: camp just below the top of a hill, with a short climb to get warm before the fun starts. The descent into Cornago was a fast one, but I think my computer exaggerated a little with the 109kph… Cornago was a cool but confusing little town! Is this 2025 or 1625? After another accidentally long coffee stop, it was a slow and steady climb on nice gravel well into the Sierra de Alcarama. Up to a pleasant camp in the pine plantation, nicely terraced just for our tenting needs. Lulled to sleep by the sound of the wind turbines...",
     "strava": "https://www.strava.com/activities/16492419714"
   },
    "25_11_18.gpx": {
-    "name": "25/11/18 Monte Alcarama -> near Cervera",
+    "name": "18/11/2025 Monte Alcarama -> near Cervera",
     "desc": "",
     "strava": "https://www.strava.com/activities/16498637257"
   },
    "25_11_19.gpx": {
-    "name": "25/11/19 near Cervera -> near Alagón",
+    "name": "19/11/2025 Cervera -> near Alagón",
     "desc": "",
     "strava": "https://www.strava.com/activities/16515376578"
   },
    "25_11_20.gpx": {
-    "name": "25/11/20 near Alagón -> Zaragoza",
+    "name": "20/11/2025 Alagón -> Zaragoza",
     "desc": "",
     "strava": "https://www.strava.com/activities/16516190377"
+  },
+   "25_11_26.gpx": {
+    "name": "26/11/2025 Zaragoza -> Samper de Calanda",
+    "desc": "So glad the prevailing wind wants to go exactly where we do - to the Mediterranean. After a nice week WOOFing at Tropicana Escribana, it was cruisy out of Zaragoza, through the industrial area and into the crop lands. We just had to point ourselves in the right direction. A few glimpses of the Ebro river along the way, which was taking a much windier route than us.",
+    "strava": ""
+  },
+   "25_11_27.gpx": {
+    "name": "27/11/2025 Samper de Calanda -> Cretas",
+    "desc": "Rail trails for days - except where they’re closed with very little info. More small towns with outsized churches, and some old olive trees. Some pretty landscapes today, can feel the Mediterranean getting closer…",
+    "strava": ""
   }
 }
