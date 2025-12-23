@@ -43,11 +43,34 @@
   <script>
     const map = L.map('map').setView([0, 0], 2);
 
-    // Base map layer
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    // Define basemaps
+    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    });
+
+    const topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+      maxZoom: 17,
+      attribution: '&copy; <a href="https://opentopomap.org/">OpenTopoMap</a> contributors'
+    });
+
+    const satellite = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+      maxZoom: 20,
+      subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+      attribution: '&copy; <a href="https://www.google.com/maps">Google Maps</a>'
+    });
+
+    // Add default basemap to the map
+    osm.addTo(map);
+
+    // Add layer control
+    const baseMaps = {
+      "OpenStreetMap": osm,
+      "Topographic": topo,
+      "Satellite": satellite
+    };
+
+    L.control.layers(baseMaps).addTo(map);
 
     async function loadAllGPX() {
       // Load summaries.json
